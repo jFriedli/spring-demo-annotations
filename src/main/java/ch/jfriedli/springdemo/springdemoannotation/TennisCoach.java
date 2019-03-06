@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 public class TennisCoach implements Coach {
 	
 	@Autowired
-	@Qualifier("happyFortuneService")
+	@Qualifier("fileFortuneService")
 	private FortuneService fortuneService;
 	
 	/*
@@ -32,7 +32,7 @@ public class TennisCoach implements Coach {
 	}
 	
 	@Autowired
-	@Qualifier("happyFortuneService")
+	@Qualifier("randomFortuneService")
 	public void doSomeCrazyStuff(FortuneService fortuneService) {
 		System.out.println("TennisCoach: Do crazy stuff!");
 	}
