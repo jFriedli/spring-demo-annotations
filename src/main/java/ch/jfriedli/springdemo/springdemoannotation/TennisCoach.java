@@ -2,7 +2,9 @@ package ch.jfriedli.springdemo.springdemoannotation;
 
 import org.springframework.stereotype.Component;
 
-@Component("tennisCoach")
+//default bean ID is the class name starting with lower case
+//tennisCoach
+@Component
 public class TennisCoach implements Coach {
 
 	@Override
