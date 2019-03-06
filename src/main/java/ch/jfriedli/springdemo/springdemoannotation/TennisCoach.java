@@ -24,5 +24,10 @@ public class TennisCoach implements Coach {
 	public String getDailyFortune() {
 		return fortuneService.getFortune();
 	}
+	
+	@Autowired
+	public void doSomeCrazyStuff(FortuneService fortuneService) {
+		System.out.println("TennisCoach: Do crazy stuff!");
+	}
 
 }
