@@ -2,11 +2,13 @@ package ch.jfriedli.springdemo.springdemoannotation;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 //default bean ID is the class name starting with lower case
 //tennisCoach
 @Component
+@Scope("prototype")
 public class TennisCoach implements Coach {
 	
 	@Autowired
